@@ -52,7 +52,7 @@
     .hero__image {
         margin-top: 40px;
         border-radius: 32px;
-        background-image: url('/img/hero_1024.jpg');
+        background-image: url("../img/hero_1024.jpg");
         max-width: 90%;
         height: 668px;
         padding: 0 75px;
@@ -115,14 +115,14 @@
     }
 
     .job__stages::after {
-        background-image: url('/img/job_1024.jpg');
+        background-image: url("../img/job_1024.jpg");
     }
 
-    .job__stages_container {
+    .job__content {
         width: 44%;
     }
 
-    .job__text {
+    .job__texts {
         line-height: 27.2px;
         margin-bottom: 27px;
     }
@@ -203,7 +203,7 @@
 
     .hero__image {
         border-radius: 24px;
-        background-image: url('/img/hero_768.jpg');
+        background-image: url("../img/hero_768.jpg");
         max-width: 87%;
         height: 662px;
     }
@@ -222,12 +222,12 @@
         padding: 0 10px;
     }
 
-    .we__text_p {
+    .we__text {
         color: var(--black-gray);
     }
 
     .projects__img {
-        background-image: url('/img/projects_768.jpg');
+        background-image: url("../img/projects_768.jpg");
         background-size: cover;
         min-height: 650px;
         margin-top: -5px;
@@ -295,13 +295,13 @@
         content: none;
     }
 
-    .job__stages_container {
+    .job__content {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
     }
 
-    .job__text_p br {
+    .job__text br {
         display: none;
     }
 
@@ -317,7 +317,7 @@
         height: 284px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('/img/job_768.jpg');
+        background-image: url("../img/job_768.jpg");
         border-radius: 24px;
         position: absolute;
         top: -322px;
@@ -325,7 +325,7 @@
         transform: translateX(-50%);
     }
 
-    .job__text {
+    .job__texts {
         line-height: 32px;
         margin-bottom: 22px;
     }
@@ -361,6 +361,10 @@
 
     .footer__label {
         margin: 12px 0;
+    }
+
+    .footer__weight:nth-child(1) {
+        margin-top: 0;
     }
 }
 
@@ -461,7 +465,7 @@
 
 
     /*ПОДВАЛ СТРАНИЧКИ*/
-    .footer__btn__radio {
+    .footer__btnradio {
         gap: 0;
     }
 
@@ -476,6 +480,8 @@
     .footer__label {
         margin: 5px 0;
     }
+
+    
 }
 
 @media(max-width: 576px) {
@@ -485,7 +491,6 @@
         flex-basis: 100%;
         overflow-x: auto;
         white-space: nowrap;
-        overflow: hidden;
     }
 
     .header__container {
@@ -549,7 +554,7 @@
         line-height: 30px;
     }
 
-    .we__text {
+    .we__texts {
         font-size: 14px;
         line-height: 28px;
     }
@@ -559,7 +564,7 @@
     }
 
     .projects__img {
-        background-image: url('/img/projects_320.jpg');
+        background-image: url("../img/projects_320.jpg");
         margin: 0;
         border-radius: 14px;
     }
@@ -656,7 +661,7 @@
         display: block;
         width: 100%;
         height: 160px;
-        background-image: url('/img/job_320.jpg');
+        background-image: url("../img/job_320.jpg");
         border-radius: 14px;
         top: -176px;
         left: 50%;
@@ -668,13 +673,13 @@
         margin-bottom: 7px;
     }
 
-    .job__text {
+    .job__texts {
         line-height: 28px;
         font-size: 14px;
         margin-bottom: 25px;
     }
 
-    .btn_more {
+    .job__btnmore {
         font-size: 12px;
         line-height: normal;
         padding: 12.5px 44px;
@@ -682,7 +687,7 @@
         margin-right: 3.5px;
     }
 
-    .btn_treaty {
+    .job__btntreaty {
         font-size: 12px;
         line-height: normal;
         padding: 11px 32.5px;
@@ -704,13 +709,13 @@
         padding: 0;
     }
 
-    .questions__item_h3 {
+    .questions__subtitle {
         font-size: 18px;
         font-weight: 500;
         margin-bottom: 5px;
     }
 
-    .questions__item_p {
+    .questions__note {
         font-size: 14px;
         font-weight: 400;
         line-height: 28px;
@@ -719,7 +724,7 @@
     /*ПОДВАЛ СТРАНИЧКИ*/
     .footer {
         margin-top: 61px;
-        padding: 30px 0;
+        padding: 30px 0 0 0;
     }
 
     .footer__container {
@@ -743,6 +748,7 @@
 
     .footer__weight:nth-child(2) {
         width: 100%;
+        margin-top: 0;
         position: relative;
     }
 
@@ -766,7 +772,7 @@
         height: 42px;
     }
 
-    .footer__radio_text {
+    .footer__radiotext {
         font-size: 15.5px;
     }
 
@@ -781,10 +787,11 @@
 
     .footer__icons {
         margin-left: 17px;
+        gap: 16px;
     }
 
     .footer__icon {
-        margin-right: 12px;
+        margin-bottom: 27px;
     }
 
     .footer__icon svg {
